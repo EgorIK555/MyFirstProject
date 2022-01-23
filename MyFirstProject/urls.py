@@ -7,6 +7,6 @@ from dataapp import views as enemyviews
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', initialviews.HomePage),
-    path('enemy/', enemyviews.EnemyPage, name='enemy'),
+    path('enemy/<str:name>', enemyviews.EnemyPage, name="enemy"),
     path('allEnemies/', enemyviews.AllEnemiesPage, name='allenemies')
 ]

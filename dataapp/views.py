@@ -6,8 +6,7 @@ def AllEnemiesPage(request):
     pageParams = {"enemies":allEnemies}
     return render(request, "allEnemies.html", pageParams)
 
-def EnemyPage(request):
-    allEnemies = Enemy.objects.all()
-    print(allEnemies)
-    params = {"speed":12,"health":100, "damage":34}
-    return render(request, 'enemy.html', params)
+def EnemyPage(request, name):
+    print(name)
+    params = {"name":"Some name","avatar":"someurl"}
+    return render(request, 'enemy.html')

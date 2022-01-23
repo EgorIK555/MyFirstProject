@@ -1,7 +1,11 @@
 <html>
+    <head>
+        {% load static %}
+    </head>
     <body>
         <h1>Home Page</h1>
         <p>World Best Site</p>
+        <img width="900"src="{% static 'MainImg.png' %}" >
         <a href="{% url 'allenemies' %}">  All Enemies </a>
     </body>
 </html>
