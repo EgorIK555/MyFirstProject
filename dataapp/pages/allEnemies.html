@@ -1,7 +1,7 @@
 <html>
     <body>
         {%for enemy in enemies %}
-        <a href="{% url 'enemy' name=enemy.name %}"><h1>{{ enemy.name }}</h1></a>
+        <a href="{% url 'enemy' enemyName=enemy.name %}"><h1>{{ enemy.name }}</h1></a>
         {% endfor %}
     </body>
 </html>

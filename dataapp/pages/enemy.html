@@ -1,7 +1,12 @@
 <html>
     <body>
         <h1>Enemy Page</h1>
-        
+        <h2>{{ enemy.name }}</h2>
+        <p>Health : {{ enemy.health }}</p>
+        <p>Speed : {{ enemy.speed }}</p>
+        <p>Damage : {{ enemy.damage }}</p>
+
+        <img src="{{ enemy.avatar.url }}">
     </body>
 </html>
 
